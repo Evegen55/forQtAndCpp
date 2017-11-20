@@ -5,8 +5,10 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     person.cpp \
-    bystroustrup.cpp
+    bystroustrup.cpp \
+    different_functions.cpp
 
 HEADERS += \
     person.h \
-    bystroustrup.h
+    bystroustrup.h \
+    different_functions.h

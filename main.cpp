@@ -1,6 +1,7 @@
 #include <iostream>
 #include <person.h>
 #include <bystroustrup.h>
+#include <different_functions.h>
 
 int main()
 {
@@ -16,13 +17,9 @@ int main()
     std::cout << firstname2;
     std::cout << "\n";
 
-    mainByBS();
-
-
-    int num = 3;
-    int* pNum = &num;
-    std::cout << pNum;
-    std::cout << "\n";
+    //mainByBS();
+    //simplePointer();
+    simplePointerDereferrence();
 
     return 0;
 }
