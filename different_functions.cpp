@@ -66,3 +66,40 @@ void simplePointerDereferrence()
     int *pNum_3 = &pNum_2;
     cout << "pNum3 = " << pNum_3  << endl;
 }
+
+void referrenceType()
+{
+    int num = 3;
+    int &refNum = num;
+
+    cout << "num contains " << num << endl;
+    cout << "refNum contains " << refNum << endl;
+
+    refNum++;    // increment refNum by 1
+
+    cout << "num contains " << num << endl;
+    cout << "refNum contains " << refNum << endl;
+    cout << "refNum is located at " << &refNum << " and num is located at " << &num << endl;
+}
+
+void passByValue(int num1)
+{
+    cout << "In passByValue()" << endl;
+    cout << "Value of num1 is " << num1 << endl;
+
+    // modify num1, won't impact num
+    num1++;
+
+    cout << "num1 is now " << num1 << endl;
+}
+
+void passByRef(int &num1)
+{
+    cout << "In passByRef()" << endl;
+    cout << "Value of num1 is " << num1 << endl;
+
+    // modify num1 which will now change num
+    num1++;
+
+    cout << "num1 is now " << num1 << endl;
+}

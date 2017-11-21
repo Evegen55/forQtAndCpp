@@ -5,21 +5,31 @@
 
 int main()
 {
-    std::cout << "Hello World!" << endl;
+    //    std::cout << "Hello World!" << endl;
 
-    person person_1{"Evgenii Lartcev"};
-    person person_2{};
+    //    person person_1{"Evgenii Lartcev"};
+    //    person person_2{};
+    //    std::string firstname1 = person_1.getFirstName();
+    //    std::cout << firstname1;
+    //    std::cout << "\n";
+    //    std::string firstname2 = person_2.getFirstName();
+    //    std::cout << firstname2;
+    //    std::cout << "\n";
 
-    std::string firstname1 = person_1.getFirstName();
-    std::cout << firstname1;
+    //    mainByBS();
+    //    simplePointer();
+    //    simplePointerDereferrence();
+    //    referrenceType();
+
+    int num = 3;
+    cout << "In main()" << endl;
+    cout << "Value of num is " << num << endl;
+
+    passByValue(num);
     std::cout << "\n";
-    std::string firstname2 = person_2.getFirstName();
-    std::cout << firstname2;
-    std::cout << "\n";
+    passByRef(num);
 
-    //mainByBS();
-    //simplePointer();
-    simplePointerDereferrence();
+    cout << "Back in main and the value of num is  " << num << endl;
 
     return 0;
 }
