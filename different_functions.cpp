@@ -37,7 +37,7 @@ void simplePointerDereferrence()
 {
     int num = 3;
     int *pNum = &num;
-    cout << pNum << endl;
+    cout << "pNum = " <<pNum << endl;
     cout << "*pNum = " << *pNum << endl;
     cout << "For now num is: \n";
     cout << "num = " << num << endl;
@@ -48,6 +48,21 @@ void simplePointerDereferrence()
     //we are using the dereference operator to change the underlying value of num, indirectly.
     cout << "For now num was modifyed by pointer: \n";
     *pNum = 45;
+    cout << "pNum = " <<pNum << endl;
     cout << "*pNum = " << *pNum  << endl;
     cout << "num = " << num << endl;
+
+    cout << "\n";
+    cout << "&num = " <<&num;
+
+    cout << "\n";
+    int *pNum_1 = &num;
+    cout << "*pNum1 = " << *pNum_1  << endl;
+    cout << "pNum1 = " << pNum_1  << endl;
+    cout << "num = " << num << endl;
+
+    cout << "\n";
+    int pNum_2 = *pNum; //yet another variable
+    int *pNum_3 = &pNum_2;
+    cout << "pNum3 = " << pNum_3  << endl;
 }
