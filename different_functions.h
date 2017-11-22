@@ -7,5 +7,6 @@ void simplePointerDereferrence();
 void referrenceType();
 void passByValue(int num1);
 void passByRef(int &num1);
+void allocatingMemory();
 
 #endif // DIFFERENT_FUNCTIONS_H

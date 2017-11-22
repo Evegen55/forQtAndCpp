@@ -8,6 +8,7 @@ class person
 public:
     person();
     person(std::string firstName_in);
+    ~person();
 
     std::string getFirstName() const {
         return firstName;

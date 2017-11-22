@@ -31,5 +31,13 @@ int main()
 
     cout << "Back in main and the value of num is  " << num << endl;
 
+    allocatingMemory();
+
+    person *ptwo = new person{};
+    std::string firstname2 = ptwo -> getFirstName();
+    std::cout << firstname2;
+    delete ptwo;
+//    std::string firstname1 = ptwo -> getFirstName(); not allowed here
+
     return 0;
 }
