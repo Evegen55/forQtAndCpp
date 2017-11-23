@@ -11,5 +11,5 @@ person::person(std::string firstName_in) {
 
 person::~person()
 {
-    std::cout << "\nReleased  ";
+    std::cout << "\n" << "memory released" << std::endl;
 }

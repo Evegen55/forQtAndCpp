@@ -34,10 +34,12 @@ int main()
     allocatingMemory();
 
     person *ptwo = new person{};
-    std::string firstname2 = ptwo -> getFirstName();
+    std::string firstname2 = ptwo -> getFirstName();//the same
     std::cout << firstname2;
+    std::cout << "\n" << "ptwo before deleting: " << ptwo << endl;
     delete ptwo;
-//    std::string firstname1 = ptwo -> getFirstName(); not allowed here
-
+    //    std::string firstname1 = ptwo -> getFirstName(); not allowed here
+    std::cout << "\n" << firstname2 << endl;
+    std::cout << "\n" << "ptwo after deleting: " << ptwo << endl; //the same
     return 0;
 }
