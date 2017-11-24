@@ -6,9 +6,11 @@ CONFIG -= qt
 SOURCES += main.cpp \
     person.cpp \
     bystroustrup.cpp \
-    different_functions.cpp
+    different_functions.cpp \
+    my_math.cpp
 
 HEADERS += \
     person.h \
     bystroustrup.h \
-    different_functions.h
+    different_functions.h \
+    my_math.h

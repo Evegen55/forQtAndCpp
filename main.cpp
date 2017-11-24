@@ -2,6 +2,7 @@
 #include <person.h>
 #include <bystroustrup.h>
 #include <different_functions.h>
+#include <my_math.h>
 
 int main()
 {
@@ -41,5 +42,10 @@ int main()
     //    std::string firstname1 = ptwo -> getFirstName(); not allowed here
     std::cout << "\n" << firstname2 << endl;
     std::cout << "\n" << "ptwo after deleting: " << ptwo << endl; //the same
+
+
+    int result = my_math::pow(2, 10);
+    std::cout << "\n" << result << endl;
+
     return 0;
 }
