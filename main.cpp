@@ -34,6 +34,16 @@ int main()
 
     allocatingMemory();
 
+    /*
+     * The keyword new is used to allocate memory for an object at runtime and delete is used to release that memory.
+     * This is also where the constructors and destructors play a big part.
+     *
+     * In the first line, we declare a pointer called pTwo
+     * that will hold the memory address of a Person object that will reside
+     * in an area of computer memory known as the heap.
+     * We have not created an actual object in memory yet, we have simply asked the computer
+     * to allocate sufficient memory to store the object.
+     */
     person *ptwo = new person{};
     std::string firstname2 = ptwo -> getFirstName();//the same
     std::cout << firstname2;
