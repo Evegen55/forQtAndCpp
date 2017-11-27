@@ -19,12 +19,19 @@ public:
      * If you choose, you can place code inside the destructor.  One reason you may want to do this
      * is to ensure that any resources used by the object, that may not be destroyed or cleaned up,
      * are taken care of in your object's destructor code.
+     * The destructor is the correct location in code perform clean up operations on your object
+     * and anything that it references.  For example, you might have dynamically declared and used other objects
+     * from within your object.  In this case, you are responsible for ensuring that those other objects
+     * are also destroyed and that their memory is released.  You do this by placing the appropriate delete statements
+     * inside your object's destructor.
       */
     ~person();
 
     std::string getFirstName() const {
         return firstName;
     }
+
+    void SayHello();
 
 private:
     std::string firstName;

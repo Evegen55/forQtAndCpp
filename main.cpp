@@ -45,6 +45,10 @@ int main()
      * to allocate sufficient memory to store the object.
      */
     person *ptwo = new person{};
+    /*
+     * You will now need to use the arrow selection operator to access the members of the class
+     *
+     */
     std::string firstname2 = ptwo -> getFirstName();//the same
     std::cout << firstname2;
     std::cout << "\n" << "ptwo before deleting: " << ptwo << endl;
@@ -56,6 +60,37 @@ int main()
 
     int result = my_math::pow(2, 10);
     std::cout << "\n" << result << endl;
+
+    person person_hello{};
+    person_hello.SayHello();
+
+    // create a Person instance using default constructor
+    // we dynamically allocate memory for a new Person object called pOne by using a pointer and the new keyword
+
+    person *person_hello_two = new person();
+
+    /*
+     *  we create a new Person object called p without using a pointer or the new keyword.
+     * The way that we declare our objects is important for determining how we call the member functions
+     * or access the public member variables as shown in this code sample.
+     * we declare a new reference variable that is a reference to the Person object we called p.
+     * We call the SayHello() member function on p by using the dot operator and that works.
+     * We also call the SayHello function using the dot operator and that works as well because we set pRef as a reference to p.
+     */
+    person p;
+    person &pRef = p;
+
+    p.SayHello();
+
+    // pointer method of calling a member function
+    /*
+     * however that in order to call the SayHello() function from the dynamically allocated Person object called person_hello_two,
+     * we had to use the member selection operator (->) to gain access to the SayHello() function.
+     */
+    person_hello_two->SayHello();
+
+    // reference method of calling a member function
+    pRef.SayHello();
 
     return 0;
 }

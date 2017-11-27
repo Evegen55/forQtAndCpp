@@ -13,3 +13,8 @@ person::~person()
 {
     std::cout << "\n" << "memory released" << std::endl;
 }
+
+void person::SayHello()
+{
+    std::cout << "Hello, " << person::firstName << std::endl;
+}
