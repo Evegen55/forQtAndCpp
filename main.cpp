@@ -3,6 +3,9 @@
 #include <bystroustrup.h>
 #include <different_functions.h>
 #include <my_math.h>
+#include <namespaceexample.h>
+
+using namespace StudyCpp;
 
 int main()
 {
@@ -91,6 +94,12 @@ int main()
 
     // reference method of calling a member function
     pRef.SayHello();
+    pRef.SetFirstName("Other name");
+    pRef.SayHello();
+
+    double radius = 12.5;
+    double area = Geometry::Area(radius);
+    std::cout << "\narea is: " << area << endl;
 
     return 0;
 }

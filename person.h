@@ -27,8 +27,13 @@ public:
       */
     ~person();
 
+    //both getter and setter can be placed in a .cpp file instead of header
     std::string getFirstName() const {
         return firstName;
+    }
+
+    void SetFirstName(std::string fName) {
+          this->firstName = fName;
     }
 
     void SayHello();
