@@ -52,5 +52,5 @@ void student::SetAge(unsigned char ageSt)
 
 void student::SitInClass()
 {
-    std::cout << "\n" << this -> firstName << " is itting in main theater" << std::endl;
+    std::cout << "\n" << this -> firstName << " is sitting in main theater" << std::endl;
 }
