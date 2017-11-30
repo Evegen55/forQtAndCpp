@@ -17,6 +17,8 @@ public:
     __int8 getAge() const;
     void SetAge(unsigned __int8 ageSt);
 
+    void SitInClass();
+
 
 private:
     std::string firstName;
