@@ -5,6 +5,8 @@
 #include <my_math.h>
 #include <namespaceexample.h>
 
+#include <lab_one.h>
+
 using namespace StudyCpp;
 
 int main()
@@ -100,6 +102,9 @@ int main()
     double radius = 12.5;
     double area = Geometry::Area(radius);
     std::cout << "\narea is: " << area << endl;
+
+    std::cout << "\n\n\n\n" << endl;
+    DoSmthWithStudents();
 
     return 0;
 }

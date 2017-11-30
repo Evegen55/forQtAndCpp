@@ -8,7 +8,10 @@ SOURCES += main.cpp \
     bystroustrup.cpp \
     different_functions.cpp \
     my_math.cpp \
-    student.cpp
+    student.cpp \
+    teacher.cpp \
+    lab_one.cpp \
+    course.cpp
 
 HEADERS += \
     person.h \
@@ -16,4 +19,7 @@ HEADERS += \
     different_functions.h \
     my_math.h \
     namespaceexample.h \
-    student.h
+    student.h \
+    teacher.h \
+    lab_one.h \
+    course.h
