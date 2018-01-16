@@ -38,6 +38,16 @@ public:
 
     void SayHello();
 
+    /*
+     * A class can define an external function as a friend function. This allows the friend function to access all the members of the class,
+     * including private members. Friend functions are non-members, which means they don't receive a "this" pointer.
+     * Consequently, they must require an explicit parameter to access an object.
+     * The following example shows how a class can declare an external function named SomeExternalFunction()
+     * as a friend function of the class. SomeExternalFunction() receives a reference parameter
+     * that identifies the object the function will deal with:
+     */
+    friend void SomeExternalFunction(person & targetObject);
+
 private:
     std::string firstName;
     std::string lastName;

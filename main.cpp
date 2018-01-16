@@ -7,6 +7,8 @@
 
 #include <lab_one.h>
 
+
+
 using namespace StudyCpp;
 
 int main()
@@ -105,6 +107,16 @@ int main()
 
     std::cout << "\n\n\n\n" << endl;
     DoSmthWithStudents();
+
+    std::cout << "Size of char : " << sizeof(char) << " byte" << endl;
+    std::cout << "Size of int : " << sizeof(int) << " bytes" << endl;
+    std::cout << "Size of short int : " << sizeof(short int) << " bytes" << endl;
+    std::cout << "Size of long int : " << sizeof(long int) << " bytes" << endl;
+    std::cout << "Size of signed long int : " << sizeof(signed long int) << " bytes" << endl;
+    std::cout << "Size of unsigned long int : " << sizeof(unsigned int) << " bytes" << endl;
+    std::cout << "Size of float : " << sizeof(float) << " bytes" <<endl;
+    std::cout << "Size of double : " << sizeof(double) << " bytes" << endl;
+    std::cout << "Size of wchar_t : " << sizeof(wchar_t) << " bytes" <<endl;
 
     return 0;
 }
