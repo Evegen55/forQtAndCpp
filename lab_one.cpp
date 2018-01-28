@@ -52,5 +52,7 @@ void DoSmthWithStudents()
         gettedStudents[i].SitInClass();
     }
 
+    std::cout << "The end" << std::endl;
+
 }
 
