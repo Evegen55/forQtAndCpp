@@ -1,4 +1,5 @@
 #include<different_functions.h>
+#include <iostream>
 
 /**
  * @brief simplePointer
@@ -129,4 +130,13 @@ void allocatingMemory()
 
     cout << "pDouble is now " << pDouble << "\n" << *pDouble << endl;
 
+}
+
+void saxpy(int n, float a, float * __restrict x, float * __restrict y)
+{
+    for (int i = 0; i < n; ++i)
+    {
+        y[i] = a*x[i] + y[i];
+        std::cout << "";
+    }
 }

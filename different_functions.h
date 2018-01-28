@@ -9,4 +9,6 @@ void passByValue(int num1);
 void passByRef(int &num1);
 void allocatingMemory();
 
+void saxpy(int n, float a, float * __restrict x, float * __restrict y);
+
 #endif // DIFFERENT_FUNCTIONS_H

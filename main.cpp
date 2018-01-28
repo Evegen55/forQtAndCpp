@@ -9,6 +9,8 @@
 
 using namespace StudyCpp;
 
+
+
 int main()
 {
     //    std::cout << "Hello World!" << endl;
@@ -105,6 +107,23 @@ int main()
 
     std::cout << "\n\n\n\n" << endl;
     DoSmthWithStudents();
+
+
+    //SAXPY operation with array on 1 m elements
+    int N = 1 << 20;
+    float *x, *y;
+    //first, allocate memory in RAM
+    x = (float*)malloc(N * sizeof(float));
+    y = (float*)malloc(N * sizeof(float));
+    //initialize array in RAM
+        for (int i = 0; i < N; i++) {
+            x[i] = 1.0f;
+            y[i] = 2.0f;
+        }
+    // Perform SAXPY on 1M elements
+    saxpy(N, 2.0, x, y);
+    std::cout << "result at index 0 is: " << y[0] << "\n"
+              << "result at index N-1 is: " << y[N-1];
 
     return 0;
 }
