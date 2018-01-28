@@ -11,7 +11,8 @@ public:
     //we declare our function for generating the power of a base raised to an exponent.
     //Note that this method is also using the static designation.
     //In order to call the function from a static class, the function must also be static.
-    static int pow(int base, int exp);
+    static int pow(int base, int exp);    
+
 };
 
 //The last key piece to note about this declaration of the Math class is that we end it with a semicolon after the closing curly brace.

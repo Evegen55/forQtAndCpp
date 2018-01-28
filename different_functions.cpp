@@ -1,5 +1,6 @@
 #include<different_functions.h>
 #include <iostream>
+#include <chrono>  // for high_resolution_clock
 
 /**
  * @brief simplePointer
@@ -154,6 +155,26 @@ void doSaxpy()
         }
     // Perform SAXPY on 1M elements
     saxpy(N, 2.0, x, y);
-    std::cout << "\n\n" << "result at index 0 is: " << y[0] << "\n"
-              << "result at index N-1 is: " << y[N-1] << "\n";
+    //std::cout << "\n\n" << "result at index 0 is: " << y[0] << "\n"
+             // << "result at index N-1 is: " << y[N-1] << "\n";
+    free(x);
+    free(y);
 }
+
+//TODO - compare measured time with java
+void doSaxpyAndMeasureTime()
+{
+    // Record start time
+    auto start = std::chrono::high_resolution_clock::now();
+
+    for (int k = 0; k < 1000; ++k) {
+        //SAXPY operation with array on 1 m elements
+        doSaxpy();
+    }
+
+    // Record end time
+    auto finish = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed = finish - start;
+    std::cout << "\n\n\n Elapsed time: " << elapsed.count() << " s\n";
+}
+

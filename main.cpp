@@ -4,7 +4,6 @@
 #include <different_functions.h>
 #include <my_math.h>
 #include <namespaceexample.h>
-
 #include <lab_one.h>
 
 using namespace StudyCpp;
@@ -116,10 +115,7 @@ int main()
     std::cout << "Size of double : " << sizeof(double) << " bytes" << endl;
     std::cout << "Size of wchar_t : " << sizeof(wchar_t) << " bytes" <<endl;
 
-    //SAXPY operation with array on 1 m elements
-    //TODO - measure time to do saxpy 1000 times and compare with java
-    doSaxpy();
-
+    doSaxpyAndMeasureTime();
 
     return 0;
 }

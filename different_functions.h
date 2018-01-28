@@ -11,5 +11,6 @@ void allocatingMemory();
 
 void saxpy(int n, float a, float * __restrict x, float * __restrict y);
 void doSaxpy();
+void doSaxpyAndMeasureTime();
 
 #endif // DIFFERENT_FUNCTIONS_H
