@@ -137,6 +137,23 @@ void saxpy(int n, float a, float * __restrict x, float * __restrict y)
     for (int i = 0; i < n; ++i)
     {
         y[i] = a*x[i] + y[i];
-        std::cout << "";
     }
+}
+
+void doSaxpy()
+{
+    int N = 1 << 20;
+    float *x, *y;
+    //first, allocate memory in RAM
+    x = (float*)malloc(N * sizeof(float));
+    y = (float*)malloc(N * sizeof(float));
+    //initialize array in RAM
+        for (int i = 0; i < N; i++) {
+            x[i] = 1.0f;
+            y[i] = 2.0f;
+        }
+    // Perform SAXPY on 1M elements
+    saxpy(N, 2.0, x, y);
+    std::cout << "\n\n" << "result at index 0 is: " << y[0] << "\n"
+              << "result at index N-1 is: " << y[N-1] << "\n";
 }
