@@ -138,5 +138,24 @@ int main()
     // This prints 20
     printf("After doing *ptr = 20, *ptr is %d\n", *ptr);
 
+    std::cout << "\n\nDeclare an array";
+    // Declare an array
+    int v[3] = {10, 100, 200};
+
+    // Declare pointer variable
+    int *ptr1;
+
+    // Assign the address of v[0] to ptr
+    ptr1 = v;
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("Value of *ptr = %d\n", *ptr1);
+        printf("Value of ptr = %p\n\n", ptr1);
+
+        // Increment pointer ptr by 1
+        ptr1++;
+    }
+
     return 0;
 }
