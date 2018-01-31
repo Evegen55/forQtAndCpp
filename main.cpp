@@ -115,7 +115,47 @@ int main()
     std::cout << "Size of double : " << sizeof(double) << " bytes" << endl;
     std::cout << "Size of wchar_t : " << sizeof(wchar_t) << " bytes" <<endl;
 
-    doSaxpyAndMeasureTime();
+    //doSaxpyAndMeasureTime();
+
+    // A normal integer variable
+    int Var = 10;
+
+    // A pointer variable that holds address of var.
+    int *ptr = &Var;
+
+    // This line prints value at address stored in ptr.
+    // Value stored is value of variable "var"
+    printf("Value of Var = %d\n", *ptr);
+
+    // The output of this line may be different in different
+    // runs even on same machine.
+    printf("Address of Var = %p\n", ptr);
+
+    // We can also use ptr as lvalue (Left hand
+    // side of assignment)
+    *ptr = 20; // Value at address is now 20
+
+    // This prints 20
+    printf("After doing *ptr = 20, *ptr is %d\n", *ptr);
+
+    std::cout << "\n\nDeclare an array";
+    // Declare an array
+    int v[3] = {10, 100, 200};
+
+    // Declare pointer variable
+    int *ptr1;
+
+    // Assign the address of v[0] to ptr
+    ptr1 = v;
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("Value of *ptr = %d\n", *ptr1);
+        printf("Value of ptr = %p\n\n", ptr1);
+
+        // Increment pointer ptr by 1
+        ptr1++;
+    }
 
     return 0;
 }
