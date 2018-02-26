@@ -160,7 +160,7 @@ int main()
     }
 
 
-    //https://www.geeksforgeeks.org/sort-algorithms-the-c-standard-template-library-stl/
+    std::cout << "\n https://www.geeksforgeeks.org/sort-algorithms-the-c-standard-template-library-stl/ \n";
     int a[10]= {1, 5, 8, 9, 6, 7, 3, 4, 2, 0};
     std::cout << "\n The array before sorting is : ";
     show(a);
@@ -169,6 +169,9 @@ int main()
 
     std::cout << "\n\n The array after sorting is : ";
     show(a);
+
+    std::cout << "\n\n https://www.geeksforgeeks.org/isblank-in-cc/ \n";
+    isblankExample();
 
     return 0;
 }

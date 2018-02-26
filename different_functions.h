@@ -9,6 +9,7 @@ void passByValue(int num1);
 void passByRef(int &num1);
 void allocatingMemory();
 void show(int a[]);
+int isblankExample();
 
 /**
  * @brief saxpy uses __restrict it means it works correctly with MSVC compiler only.
