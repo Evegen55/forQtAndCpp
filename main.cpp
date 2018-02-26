@@ -6,6 +6,8 @@
 #include <namespaceexample.h>
 #include <lab_one.h>
 
+#include <algorithm>
+
 using namespace StudyCpp;
 
 int main()
@@ -156,6 +158,17 @@ int main()
         // Increment pointer ptr by 1
         ptr1++;
     }
+
+
+    //https://www.geeksforgeeks.org/sort-algorithms-the-c-standard-template-library-stl/
+    int a[10]= {1, 5, 8, 9, 6, 7, 3, 4, 2, 0};
+    std::cout << "\n The array before sorting is : ";
+    show(a);
+
+    sort(a, a+10);
+
+    std::cout << "\n\n The array after sorting is : ";
+    show(a);
 
     return 0;
 }

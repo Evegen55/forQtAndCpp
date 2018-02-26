@@ -178,3 +178,10 @@ void doSaxpyAndMeasureTime()
     std::cout << "\n\n\n Elapsed time: " << elapsed.count() << " s\n";
 }
 
+
+void show(int a[])
+{
+    for(int i = 0; i < 10; ++i) {
+        cout << '\t' << a[i];
+    }
+}
