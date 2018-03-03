@@ -157,5 +157,15 @@ int main()
         ptr1++;
     }
 
+
+
+    pair <int, char> PAIR1 ;
+
+    PAIR1.first = 100;
+    PAIR1.second = 'G' ;
+
+    std::cout << PAIR1.first << " " ;
+    std::cout << PAIR1.second << endl ;
+
     return 0;
 }
