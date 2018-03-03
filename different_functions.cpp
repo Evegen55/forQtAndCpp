@@ -1,6 +1,7 @@
 #include<different_functions.h>
 #include <iostream>
 #include <chrono>  // for high_resolution_clock
+#include <ctype.h>
 
 /**
  * @brief simplePointer
@@ -149,14 +150,14 @@ void doSaxpy()
     x = (float*)malloc(N * sizeof(float));
     y = (float*)malloc(N * sizeof(float));
     //initialize array in RAM
-        for (int i = 0; i < N; i++) {
-            x[i] = 1.0f;
-            y[i] = 2.0f;
-        }
+    for (int i = 0; i < N; i++) {
+        x[i] = 1.0f;
+        y[i] = 2.0f;
+    }
     // Perform SAXPY on 1M elements
     saxpy(N, 2.0, x, y);
     //std::cout << "\n\n" << "result at index 0 is: " << y[0] << "\n"
-             // << "result at index N-1 is: " << y[N-1] << "\n";
+    // << "result at index N-1 is: " << y[N-1] << "\n";
     free(x);
     free(y);
 }
@@ -178,3 +179,39 @@ void doSaxpyAndMeasureTime()
     std::cout << "\n\n\n Elapsed time: " << elapsed.count() << " s\n";
 }
 
+
+void show(int a[])
+{
+    for(int i = 0; i < 10; ++i) {
+        std::cout << '\t' << a[i];
+    }
+}
+
+int isblankExample()
+{
+    std::string str = "Geeks for Geeks";
+    std:: cout << "\n" <<str << std::endl;
+    int i = 0;
+
+    // to store count of blanks
+    int count = 0;
+    while (str[i]) {
+
+        // to get ith character
+        // from string
+        char ch = str[i++];
+
+        // mark a new line when space
+        // or horizontal tab is found
+        if (isblank(ch)) {
+            std::cout << std::endl;
+            count++;
+        } else {
+            std::cout << ch;
+        }
+
+    }
+
+    std::cout << "\nTotal blanks are : "
+         << count << std::endl;
+}

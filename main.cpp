@@ -6,6 +6,8 @@
 #include <namespaceexample.h>
 #include <lab_one.h>
 
+#include <algorithm>
+
 using namespace StudyCpp;
 
 int main()
@@ -157,8 +159,6 @@ int main()
         ptr1++;
     }
 
-
-
     pair <int, char> PAIR1 ;
 
     PAIR1.first = 100;
@@ -166,6 +166,19 @@ int main()
 
     std::cout << PAIR1.first << " " ;
     std::cout << PAIR1.second << endl ;
+
+    std::cout << "\n https://www.geeksforgeeks.org/sort-algorithms-the-c-standard-template-library-stl/ \n";
+    int a[10]= {1, 5, 8, 9, 6, 7, 3, 4, 2, 0};
+    std::cout << "\n The array before sorting is : ";
+    show(a);
+
+    sort(a, a+10);
+
+    std::cout << "\n\n The array after sorting is : ";
+    show(a);
+
+    std::cout << "\n\n https://www.geeksforgeeks.org/isblank-in-cc/ \n";
+    isblankExample();
 
     return 0;
 }
