@@ -203,5 +203,26 @@ int main()
     std::cout << PAIR222.first << endl ;  //it prints nothing i.e NULL
     std::cout << PAIR222.second << endl ; //it prints nothing i.e NULL
 
+    pair <string, double> PAIR3 ;
+    PAIR3 = make_pair ("GeeksForGeeks is Best",4.56);
+    std::cout << PAIR3.first << " " ;
+    std::cout << PAIR3.second << endl ;
+
+    //logical
+
+    pair<int, int>pair1 = make_pair(1, 12);
+    pair<int, int>pair2 = make_pair(9, 12);
+    pair<int, int>pair3 = make_pair(9, 11);
+    pair<int, int>pair4 = make_pair(10, 11);
+
+    cout << (pair1 == pair2) << endl; //0 NO
+    cout << (pair1 != pair2) << endl; //1 YES
+    cout << (pair1 >= pair2) << endl; //0 NO
+    cout << (pair1 <= pair2) << endl; //1 YES
+    cout << (pair1 > pair2) << endl; //0 NO
+    cout << (pair1 < pair2) << endl; //1 YES
+    cout << (pair3 < pair2) << endl; //1 YES
+    cout << (pair2 < pair4) << endl; //1 YES
+
     return 0;
 }
