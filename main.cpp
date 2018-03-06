@@ -8,6 +8,8 @@
 
 #include <algorithm>
 
+#include <utility>
+
 using namespace StudyCpp;
 
 int main()
@@ -179,6 +181,27 @@ int main()
 
     std::cout << "\n\n https://www.geeksforgeeks.org/isblank-in-cc/ \n";
     isblankExample();
+
+
+
+    pair  <string,double> g1 ("GeeksForGeeks", 1.23); //initialized,  different data type
+    pair  <int, char> g2(1, 'a');
+    pair  <int, int> g3(1, 10);   //initialized,  same data type
+    pair  <int, int> g4(g3);    //copy of g3
+
+    std::cout << "g3.second = " << g3.second << endl ;
+
+    std::cout << "\n\n\n";
+    pair <int, double> PAIR111 ;
+    pair <string, char> PAIR222 ;
+
+    std::cout << PAIR111.first << endl ;  //it is initialised to 0
+    std::cout << PAIR111.second << endl ; //it is initialised to 0
+
+    std::cout << " ";
+
+    std::cout << PAIR222.first << endl ;  //it prints nothing i.e NULL
+    std::cout << PAIR222.second << endl ; //it prints nothing i.e NULL
 
     return 0;
 }
