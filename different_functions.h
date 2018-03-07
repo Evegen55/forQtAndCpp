@@ -25,4 +25,6 @@ void saxpy(int n, float a, float * __restrict x, float * __restrict y);
 void doSaxpy();
 void doSaxpyAndMeasureTime();
 
+void doVectors();
+
 #endif // DIFFERENT_FUNCTIONS_H

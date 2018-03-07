@@ -213,5 +213,28 @@ int isblankExample()
     }
 
     std::cout << "\nTotal blanks are : "
-         << count << std::endl;
+              << count << std::endl;
+}
+
+void doVectors()
+{
+    vector <int> g1;
+    vector <int> :: iterator i;
+    vector <int> :: reverse_iterator ir;
+
+    for (int i = 1; i <= 5; i++)
+        g1.push_back(i);
+
+    std::cout << "Output of begin() and end()\t:\t";
+    for (i = g1.begin(); i != g1.end(); ++i)
+        std::cout << *i << '\t';
+
+    std::cout << endl << endl;
+    std::cout << "Output of rbegin() and rend()\t:\t";
+    for (ir = g1.rbegin(); ir != g1.rend(); ++ir)
+        cout << *ir << '\t';
+
+    std::cout << "\nSize : " << g1.size();
+    std::cout << "\nCapacity : " << g1.capacity();
+    std:: cout << "\nMax_Size : " << g1.max_size();
 }

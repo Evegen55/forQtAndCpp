@@ -224,5 +224,7 @@ int main()
     cout << (pair3 < pair2) << endl; //1 YES
     cout << (pair2 < pair4) << endl; //1 YES
 
+    doVectors();
+
     return 0;
 }
