@@ -236,5 +236,14 @@ void doVectors()
 
     std::cout << "\nSize : " << g1.size();
     std::cout << "\nCapacity : " << g1.capacity();
-    std:: cout << "\nMax_Size : " << g1.max_size();
+    std::cout << "\nMax_Size : " << g1.max_size();
+
+    std::cout << "\nReference operator [g] : g1[2] = " << g1[2];
+    std::cout << std::endl;
+    std::cout << "at : g1.at(4) = " << g1.at(4);
+    std::cout << std::endl;
+    std::cout << "front() : g1.front() = " << g1.front();
+    std::cout << std::endl;
+    std::cout << "back() : g1.back() = " << g1.back();
+    std::cout <<std::endl;
 }
