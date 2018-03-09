@@ -27,4 +27,8 @@ void doSaxpyAndMeasureTime();
 
 void doVectors();
 
+void showlist(list <int> g);
+void doLists();
+
+
 #endif // DIFFERENT_FUNCTIONS_H

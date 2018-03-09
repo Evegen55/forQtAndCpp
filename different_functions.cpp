@@ -3,6 +3,9 @@
 #include <chrono>  // for high_resolution_clock
 #include <ctype.h>
 
+#include <list>
+#include <iterator>
+
 /**
  * @brief simplePointer
  *
@@ -246,4 +249,48 @@ void doVectors()
     std::cout << std::endl;
     std::cout << "back() : g1.back() = " << g1.back();
     std::cout <<std::endl;
+}
+
+void showlist(list<int> g)
+{
+    list <int> :: iterator it;
+    for(it = g.begin(); it != g.end(); ++it)
+        std::cout << '\t' << *it;
+    std::cout << '\n';
+}
+
+void doLists()
+{
+    list <int> gqlist1, gqlist2;
+
+
+    for (int i = 0; i < 10; ++i)
+    {
+        gqlist1.push_back(i * 2);
+        gqlist2.push_front(i * 3);
+    }
+    std::cout << "\nList 1 (gqlist1) is : ";
+    showlist(gqlist1);
+
+    std::cout << "\nList 2 (gqlist2) is : ";
+    showlist(gqlist2);
+
+    std::cout << "\ngqlist1.front() : " << gqlist1.front();
+    std::cout << "\ngqlist1.back() : " << gqlist1.back();
+
+    std::cout << "\ngqlist1.pop_front() : ";
+    gqlist1.pop_front();
+    showlist(gqlist1);
+
+    std::cout << "\ngqlist2.pop_back() : ";
+    gqlist2.pop_back();
+    showlist(gqlist2);
+
+    std::cout << "\ngqlist1.reverse() : ";
+    gqlist1.reverse();
+    showlist(gqlist1);
+
+    std::cout << "\ngqlist2.sort(): ";
+    gqlist2.sort();
+    showlist(gqlist2);
 }
