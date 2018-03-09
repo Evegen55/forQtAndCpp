@@ -30,5 +30,8 @@ void doVectors();
 void showlist(list <int> g);
 void doLists();
 
+void showdq(deque <int> g);
+void doDeque();
+
 
 #endif // DIFFERENT_FUNCTIONS_H

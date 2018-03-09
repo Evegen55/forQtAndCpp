@@ -229,5 +229,8 @@ int main()
     std::cout << "https://www.geeksforgeeks.org/list-cpp-stl/" << endl ;
     doLists();
 
+    std::cout << "\n https://www.geeksforgeeks.org/deque-cpp-stl/" << endl ;
+    doDeque();
+
     return 0;
 }
