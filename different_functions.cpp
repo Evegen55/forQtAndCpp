@@ -6,6 +6,7 @@
 #include <list>
 #include <iterator>
 #include <deque>
+#include <queue>
 
 /**
  * @brief simplePointer
@@ -299,33 +300,62 @@ void doLists()
 void showdq(deque<int> g)
 {
     deque <int> :: iterator it;
-        for (it = g.begin(); it != g.end(); ++it)
-            std::cout << '\t' << *it;
-        std::cout << '\n';
+    for (it = g.begin(); it != g.end(); ++it)
+        std::cout << '\t' << *it;
+    std::cout << '\n';
 }
 
 void doDeque()
 {
     deque <int> gquiz;
-        gquiz.push_back(10);
-        gquiz.push_front(20);
-        gquiz.push_back(30);
-        gquiz.push_front(15);
-        std::cout << "The deque gquiz is : ";
-        showdq(gquiz);
+    gquiz.push_back(10);
+    gquiz.push_front(20);
+    gquiz.push_back(30);
+    gquiz.push_front(15);
+    std::cout << "The deque gquiz is : ";
+    showdq(gquiz);
 
-        std::cout << "\ngquiz.size() : " << gquiz.size();
-        std::cout << "\ngquiz.max_size() : " << gquiz.max_size();
+    std::cout << "\ngquiz.size() : " << gquiz.size();
+    std::cout << "\ngquiz.max_size() : " << gquiz.max_size();
 
-        std::cout << "\ngquiz.at(2) : " << gquiz.at(2);
-        std::cout << "\ngquiz.front() : " << gquiz.front();
-        std::cout << "\ngquiz.back() : " << gquiz.back();
+    std::cout << "\ngquiz.at(2) : " << gquiz.at(2);
+    std::cout << "\ngquiz.front() : " << gquiz.front();
+    std::cout << "\ngquiz.back() : " << gquiz.back();
 
-        std::cout << "\ngquiz.pop_front() : ";
-        gquiz.pop_front();
-        showdq(gquiz);
+    std::cout << "\ngquiz.pop_front() : ";
+    gquiz.pop_front();
+    showdq(gquiz);
 
-        std::cout << "\ngquiz.pop_back() : ";
-        gquiz.pop_back();
-        showdq(gquiz);
+    std::cout << "\ngquiz.pop_back() : ";
+    gquiz.pop_back();
+    showdq(gquiz);
+}
+
+void showq(queue<int> gq)
+{
+    queue <int> g = gq;
+    while (!g.empty())
+    {
+        std::cout << '\t' << g.front();
+        g.pop();
+    }
+    std::cout << '\n';
+}
+
+void doQeue()
+{
+    queue <int> gquiz;
+    gquiz.push(10);
+    gquiz.push(20);
+
+    std::cout << "The queue gquiz is : ";
+    showq(gquiz);
+
+    std::cout << "\ngquiz.size() : " << gquiz.size();
+    std::cout << "\ngquiz.front() : " << gquiz.front();
+    std::cout << "\ngquiz.back() : " << gquiz.back();
+
+    std::cout << "\ngquiz.pop() : ";
+    gquiz.pop();
+    showq(gquiz);
 }

@@ -226,11 +226,14 @@ int main()
 
     doVectors();
 
-    std::cout << "https://www.geeksforgeeks.org/list-cpp-stl/" << endl ;
+    std::cout << "https://www.geeksforgeeks.org/list-cpp-stl/" << endl;
     doLists();
 
-    std::cout << "\n https://www.geeksforgeeks.org/deque-cpp-stl/" << endl ;
+    std::cout << "\n https://www.geeksforgeeks.org/deque-cpp-stl/" << endl;
     doDeque();
+
+    std::cout << "\n https://www.geeksforgeeks.org/queue-cpp-stl/" << endl;
+    doQeue();
 
     return 0;
 }

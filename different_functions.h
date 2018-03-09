@@ -34,4 +34,8 @@ void showdq(deque <int> g);
 void doDeque();
 
 
+void showq(queue <int> gq);
+void doQeue();
+
+
 #endif // DIFFERENT_FUNCTIONS_H
