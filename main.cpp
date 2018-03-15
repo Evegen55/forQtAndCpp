@@ -10,7 +10,26 @@
 
 #include <utility>
 
+#include <MMath.h>
+
 using namespace StudyCpp;
+
+class base {
+public:
+    base()
+    { cout<<"Constructing base \n"; }
+    virtual ~base()
+    { cout<<"Destructing base \n"; }
+};
+
+class derived: public base {
+public:
+    derived()
+    { cout<<"Constructing derived \n"; }
+    ~derived()
+    { cout<<"Destructing derived \n"; }
+};
+
 
 int main()
 {
@@ -225,6 +244,14 @@ int main()
     cout << (pair2 < pair4) << endl; //1 YES
 
     doVectors();
+
+    long resultMM = MMath.pow(2, 30);
+    cout << "\n2 power 30 = " << resultMM << endl;
+
+    std::cout << "\nhttps://www.geeksforgeeks.org/virtual-destructor/" << endl ;
+    derived *d = new derived(); //order to create: Constructing base, Constructing derived
+    base *b = d;//pointer only
+    delete b; //invocation order: Destructing derived, Destructing base
 
     return 0;
 }

@@ -11,7 +11,8 @@ SOURCES += main.cpp \
     student.cpp \
     teacher.cpp \
     lab_one.cpp \
-    course.cpp
+    course.cpp \
+    MMath.cpp
 
 HEADERS += \
     person.h \
@@ -22,4 +23,5 @@ HEADERS += \
     student.h \
     teacher.h \
     lab_one.h \
-    course.h
+    course.h \
+    MMath.h
