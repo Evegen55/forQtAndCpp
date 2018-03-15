@@ -245,6 +245,16 @@ int main()
 
     doVectors();
 
+    std::cout << "https://www.geeksforgeeks.org/list-cpp-stl/" << endl;
+    doLists();
+
+    std::cout << "\n https://www.geeksforgeeks.org/deque-cpp-stl/" << endl;
+    doDeque();
+
+    std::cout << "\n https://www.geeksforgeeks.org/queue-cpp-stl/" << endl;
+    doQeue();
+
+
     long resultMM = MMath.pow(2, 30);
     cout << "\n2 power 30 = " << resultMM << endl;
 
@@ -252,6 +262,7 @@ int main()
     derived *d = new derived(); //order to create: Constructing base, Constructing derived
     base *b = d;//pointer only
     delete b; //invocation order: Destructing derived, Destructing base
+
 
     return 0;
 }

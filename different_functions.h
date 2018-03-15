@@ -27,4 +27,15 @@ void doSaxpyAndMeasureTime();
 
 void doVectors();
 
+void showlist(list <int> g);
+void doLists();
+
+void showdq(deque <int> g);
+void doDeque();
+
+
+void showq(queue <int> gq);
+void doQeue();
+
+
 #endif // DIFFERENT_FUNCTIONS_H
