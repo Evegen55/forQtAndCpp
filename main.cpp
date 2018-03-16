@@ -11,6 +11,9 @@
 #include <utility>
 
 #include <MMath.h>
+#include <limits.h>
+#include <float.h>
+#include <cstring>
 
 using namespace StudyCpp;
 
@@ -262,6 +265,47 @@ int main()
     derived *d = new derived(); //order to create: Constructing base, Constructing derived
     base *b = d;//pointer only
     delete b; //invocation order: Destructing derived, Destructing base
+
+    std::cout << LONG_LONG_MAX <<std::endl;
+    std::cout << INT_MAX <<std::endl;
+    long double counter1;
+
+    //Strings in C++
+    //way 1
+    char str_c1[10] = "Hello";
+    char str_c2[10] = "World";
+    char str_c3[10];
+    int  len_c ;
+
+    // copy str1 into str3
+    strcpy( str_c3, str_c1);
+    std::cout << "strcpy( str_c3, str_c1) : " << str_c3 << std::endl;
+
+    // concatenates str1 and str2
+    strcat( str_c1, str_c2);
+    std::cout << "strcat( str_c1, str_c2): " << str_c1 << std::endl;
+
+    // total lenghth of str1 after concatenation
+    len_c = strlen(str_c1);
+    std::cout << "strlen(str_c1) : " << len_c << std::endl;
+
+    //way 2
+    std::string str1 = "Hello";
+    std::string str2 = "World";
+    std::string str3;
+    int  len ;
+
+    // copy str1 into str3
+    str3 = str1;
+    std::cout << "str3 : " << str3 << std::endl;
+
+    // concatenates str1 and str2
+    str3 = str1 + str2;
+    std::cout << "str1 + str2 : " << str3 << std::endl;
+
+    // total length of str3 after concatenation
+    len = str3.size();
+    std::cout << "str3.size() :  " << len << std::endl;
 
 
     return 0;
