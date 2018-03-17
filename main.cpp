@@ -266,8 +266,13 @@ int main()
     base *b = d;//pointer only
     delete b; //invocation order: Destructing derived, Destructing base
 
-    std::cout << LLONG_MAX <<std::endl;
-    std::cout << INT_MAX <<std::endl;
+#ifdef LONG_LONG_MAX
+    std::cout << "\nLONG_LONG_MAX = " << LONG_LONG_MAX <<std::endl;
+#elif LLONG_MAX
+    std::cout << "\nLLONG_MAX = " << LLONG_MAX <<std::endl;
+#endif
+
+    std::cout << "\nINT_MAX = " << INT_MAX <<std::endl;
     long double counter1;
 
     //Strings in C++
