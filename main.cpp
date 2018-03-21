@@ -258,7 +258,7 @@ int main()
     doQeue();
 
 
-    long resultMM = MMath.pow(2, 30);
+    long resultMM = MMath::pow(2, 30);
     cout << "\n2 power 30 = " << resultMM << endl;
 
     std::cout << "\nhttps://www.geeksforgeeks.org/virtual-destructor/" << endl ;
@@ -311,6 +311,11 @@ int main()
     // total length of str3 after concatenation
     len = str3.size();
     std::cout << "str3.size() :  " << len << std::endl;
+
+    person pr;
+    person *pr_pr = new person();
+    pr.SayHello();
+    pr_pr->SayHello();
 
 
     return 0;

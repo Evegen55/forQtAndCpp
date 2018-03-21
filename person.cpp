@@ -16,5 +16,6 @@ person::~person()
 
 void person::SayHello()
 {
-    std::cout << "Hello, " << person::firstName << std::endl;
+    std::string s = "\nHello, " + person::firstName;
+    std::cout << s << std::endl;
 }
