@@ -12,7 +12,9 @@ SOURCES += main.cpp \
     teacher.cpp \
     lab_one.cpp \
     course.cpp \
-    MMath.cpp
+    MMath.cpp \
+    vehicle.cpp \
+    car.cpp
 
 HEADERS += \
     person.h \
@@ -24,7 +26,9 @@ HEADERS += \
     teacher.h \
     lab_one.h \
     course.h \
-    MMath.h
+    MMath.h \
+    vehicle.h \
+    car.h
 
 #use it with win7 only with russian keyboards
 #QMAKE_EXTRA_TARGETS += before_build makefilehook

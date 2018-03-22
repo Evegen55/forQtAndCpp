@@ -15,6 +15,8 @@
 #include <float.h>
 #include <cstring>
 
+#include <car.h>
+
 using namespace StudyCpp;
 
 class base {
@@ -316,6 +318,11 @@ int main()
     person *pr_pr = new person();
     pr.SayHello();
     pr_pr->SayHello();
+
+    //1) parent constructor invoked (Vehicle)
+    //2) child constructor invoked (Car)
+    Car car;
+    car.GetPrivateParentsMembers();
 
 
     return 0;
