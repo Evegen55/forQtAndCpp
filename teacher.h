@@ -7,15 +7,15 @@ class teacher
 {
 public:
     teacher();
-    teacher(std::string fName, std::string lName, unsigned __int8 ageSt);
+    teacher(std::string fName, std::string lName, unsigned char ageSt);
     ~teacher();
 
     std::string getFirstName() const;
     void SetFirstName(std::string fName);
     std::string getLastName() const;
     void SetLastName(std::string lName);
-    __int8 getAge() const;
-    void SetAge(unsigned __int8 ageSt);
+    char getAge() const;
+    void SetAge(unsigned char ageSt);
 
     void GradeStudent();
     void SitInClass();
@@ -24,7 +24,7 @@ public:
 private:
     std::string firstName;
     std::string lastName;
-    unsigned __int8 age;
+    unsigned char age;
 };
 
 #endif // TEACHER_H
