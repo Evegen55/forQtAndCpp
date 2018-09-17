@@ -14,7 +14,8 @@ SOURCES += main.cpp \
     course.cpp \
     MMath.cpp \
     vehicle.cpp \
-    car.cpp
+    car.cpp \
+    linux_fork_example.cpp
 
 HEADERS += \
     person.h \
@@ -28,7 +29,8 @@ HEADERS += \
     course.h \
     MMath.h \
     vehicle.h \
-    car.h
+    car.h \
+    linux_fork_example.h
 
 #use it with win7 only with russian keyboards
 #QMAKE_EXTRA_TARGETS += before_build makefilehook

@@ -17,6 +17,8 @@
 
 #include <car.h>
 
+#include "linux_fork_example.h"
+
 using namespace StudyCpp;
 
 class base {
@@ -324,6 +326,10 @@ int main()
     Car car;
     car.GetPrivateParentsMembers();
 
+    std::printf("\nExample with linux processes\n");
+    linux_fork_example();
+    std::printf("\nExample 2 with linux processes\n");
+    linux_fork_example2();
 
     return 0;
 }
